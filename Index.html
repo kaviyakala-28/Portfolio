@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kaviya Kala | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1b4b;
+      color: #f8fafc;
+      animation: fadeIn 2s ease-in;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(90deg, #1e1b4b, #3b0764);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ec4899;
+      animation: slideDown 1s ease-out;
+    }
+
+    .typewriter {
+      font-size: 1.2rem;
+      color: #f8fafc;
+      border-right: 2px solid #ec4899;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #ec4899; }
+    }
+
+    .btn-download {
+      background-color: #ec4899;
+      color: #1e1b4b;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .card {
+      background-color: #2e1065;
+      margin: 1rem 0;
+      padding: 1.5rem;
+      border-left: 5px solid #ec4899;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .skills span {
+      background: #ec4899;
+      color: #1e1b4b;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    .projects img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #ec4899;
+      color: #1e1b4b;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #3b0764;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kaviya Kala.S</h1>
+  <div class="typewriter">Web Developer | Python Coder | Creative Thinker</div>
+  <br><br>
+  <a href="KaviyaKala_Resume.pdf" class="btn-download" download>Download Resume</a>
+</header>
+
+<section class="card">
+  <h2>About Me</h2>
+  <p>I am a Computer Science graduate from Bishop Heber College, deeply interested in web development and software design. I enjoy creating user-centric solutions and constantly evolving my tech skills through real-world projects.</p>
+</section>
+
+<section class="card">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>C</span><span>Python</span><span>SQL</span>
+    <span>HTML</span><span>MySQL</span>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Projects</h2>
+  <div class="projects">
+    <p><strong>Intrusion Detection System (IDS)</strong> – Built using CNN + LSTM for smart network threat detection.</p>
+    <img src="project1.jpg" alt="IDS project">
+    <p><strong>Frontend Clone Projects</strong> – UI/UX clones of famous apps using HTML/CSS/JS.</p>
+    <img src="project2.jpg" alt="Frontend clone project">
+  </div>
+</section>
+
+<section class="card">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Python, C Programming – T4TEQ</li>
+    <li>DevOps – Infosys Springboard</li>
+    <li>Business Communication – Infosys</li>
+    <li>Soft Skills Training – TCSiON</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Achievements</h2>
+  <ul>
+    <li>Organized a successful coding Bootcamp</li>
+    <li>Presented a technical paper in a symposium</li>
+    <li>Recognized as a core member of CS Association</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <p>Email: <a href="mailto:28kaviyasiva@gmail.com">28kaviyasiva@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/kaviyakala-saravanan-a1b1b226a" target="_blank">View Profile</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Kaviya Kala. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
